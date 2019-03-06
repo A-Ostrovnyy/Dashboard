@@ -1,0 +1,64 @@
+<nav class="navigation">
+  <ul class="navigation__list">
+    <li class="navigation__item">
+      <a href="#" class="navigation__link">
+        <div class="navigation__user">
+          <img src="/img/User-avatar.jpg" alt="user avatar" class="navigation__user--avatar">
+        </div>
+        <span class="navigation__counter navigation__counter--urgent">2</span>
+      </a>
+    </li>
+    <li class="navigation__item">
+      <a href="#" class="navigation__link navigation__link--active">
+        <div class="navigation__icon">
+            {{mixins.icon('board')}}
+        </div>
+        <span class="navigation__text">
+          Board
+        </span>
+      </a>
+    </li>
+    <li class="navigation__item">
+      <a href="#" class="navigation__link">
+        <div class="navigation__icon">
+            {{mixins.icon('hamburger')}}
+        </div>
+        <span class="navigation__text">
+          Projects
+        </span>
+        <span class="navigation__counter navigation__counter--project">9</span>
+      </a>
+    </li>
+    <li class="navigation__item">
+      <a href="#" class="navigation__link navigation__link--settings">
+        <div class="navigation__icon">
+            {{mixins.icon('gear')}}
+        </div>
+        <span class="navigation__text">
+          Settings
+        </span>
+      </a>
+    </li>
+    <li class="navigation__item">
+      <a href="#" class="navigation__link navigation__link--upgrade">
+        <div class="navigation__icon">
+            {{mixins.icon('atomic')}}
+        </div>
+        <span class="navigation__text">
+          Upgrade
+        </span>
+        <span class="navigation__counter navigation__counter--urgent">3</span>
+      </a>
+    </li>
+    <li class="navigation__item">
+      <a href="#" class="navigation__link navigation__link--logout">
+        <div class="navigation__icon">
+          <span class="logout"></span>
+        </div>
+        <span class="navigation__text">
+          Logout
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
