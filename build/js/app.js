@@ -94,19 +94,31 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _sayHello = __webpack_require__(/*! ./lib/sayHello.js */ \"./lib/sayHello.js\");\n\nvar _sayHello2 = _interopRequireDefault(_sayHello);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _sayHello2.default)();\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9hcHAuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2FwcC5qcz8wMzU0Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBzYXlIZWxsbyBmcm9tICcuL2xpYi9zYXlIZWxsby5qcyc7XG5cbnNheUhlbGxvKCk7XG4iXSwibWFwcGluZ3MiOiI7O0FBQUE7QUFDQTs7Ozs7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./app.js\n");
+eval("\n\n__webpack_require__(/*! ./top-line/top-line.js */ \"./top-line/top-line.js\");\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9hcHAuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2FwcC5qcz8wMzU0Il0sInNvdXJjZXNDb250ZW50IjpbIlxuaW1wb3J0ICcuL3RvcC1saW5lL3RvcC1saW5lLmpzJztcbiJdLCJtYXBwaW5ncyI6Ijs7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./app.js\n");
 
 /***/ }),
 
-/***/ "./lib/sayHello.js":
-/*!*************************!*\
-  !*** ./lib/sayHello.js ***!
-  \*************************/
+/***/ "./top-line/online.js":
+/*!****************************!*\
+  !*** ./top-line/online.js ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nfunction sayHello() {\n  if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {\n    var args = ['\\n %c Made with ❤️ by Rivercode %c http://www.riverco.de/ %c %c 🐳 \\n\\n', 'border: 1px solid #000;color: #000; background: #fff001; padding:5px 0;', 'color: #fff; background: #1c1c1c; padding:5px 0;border: 1px solid #000;', 'background: #fff; padding:5px 0;', 'color: #b0976d; background: #fff; padding:5px 0;'];\n    window.console.log.apply(console, args);\n  } else if (window.console) {\n    window.console.log('Made with love ❤️ Riverco.de - http://www.riverco.de/  ❤️');\n  }\n}\nmodule.exports = sayHello;\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9saWIvc2F5SGVsbG8uanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2xpYi9zYXlIZWxsby5qcz8xNTc1Il0sInNvdXJjZXNDb250ZW50IjpbImZ1bmN0aW9uIHNheUhlbGxvKCkge1xuICBpZiAobmF2aWdhdG9yLnVzZXJBZ2VudC50b0xvd2VyQ2FzZSgpLmluZGV4T2YoJ2Nocm9tZScpID4gLTEpIHtcbiAgICB2YXIgYXJncyA9IFsnXFxuICVjIE1hZGUgd2l0aCDinaTvuI8gYnkgUml2ZXJjb2RlICVjIGh0dHA6Ly93d3cucml2ZXJjby5kZS8gJWMgJWMg8J+QsyBcXG5cXG4nLCAnYm9yZGVyOiAxcHggc29saWQgIzAwMDtjb2xvcjogIzAwMDsgYmFja2dyb3VuZDogI2ZmZjAwMTsgcGFkZGluZzo1cHggMDsnLCAnY29sb3I6ICNmZmY7IGJhY2tncm91bmQ6ICMxYzFjMWM7IHBhZGRpbmc6NXB4IDA7Ym9yZGVyOiAxcHggc29saWQgIzAwMDsnLCAnYmFja2dyb3VuZDogI2ZmZjsgcGFkZGluZzo1cHggMDsnLCAnY29sb3I6ICNiMDk3NmQ7IGJhY2tncm91bmQ6ICNmZmY7IHBhZGRpbmc6NXB4IDA7J107XG4gICAgd2luZG93LmNvbnNvbGUubG9nLmFwcGx5KGNvbnNvbGUsIGFyZ3MpO1xuICB9IGVsc2UgaWYgKHdpbmRvdy5jb25zb2xlKSB7XG4gICAgd2luZG93LmNvbnNvbGUubG9nKCdNYWRlIHdpdGggbG92ZSDinaTvuI8gUml2ZXJjby5kZSAtIGh0dHA6Ly93d3cucml2ZXJjby5kZS8gIOKdpO+4jycpO1xuICB9XG59XG5tb2R1bGUuZXhwb3J0cyA9IHNheUhlbGxvO1xuIl0sIm1hcHBpbmdzIjoiOztBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./lib/sayHello.js\n");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = showOnlineUsers;\nfunction showOnlineUsers() {\n  var onlineList = document.querySelector('.online__list');\n  onlineList.classList.toggle('.online__list--active');\n}\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi90b3AtbGluZS9vbmxpbmUuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL3RvcC1saW5lL29ubGluZS5qcz9hYTk2Il0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIHNob3dPbmxpbmVVc2VycygpIHtcbiAgY29uc3Qgb25saW5lTGlzdCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5vbmxpbmVfX2xpc3QnKTtcbiAgb25saW5lTGlzdC5jbGFzc0xpc3QudG9nZ2xlKCcub25saW5lX19saXN0LS1hY3RpdmUnKTtcbn1cbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBQTtBQUFBO0FBQ0E7QUFDQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./top-line/online.js\n");
+
+/***/ }),
+
+/***/ "./top-line/top-line.js":
+/*!******************************!*\
+  !*** ./top-line/top-line.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nvar _online = __webpack_require__(/*! ./online.js */ \"./top-line/online.js\");\n\nvar topLine = document.getElementById('top-line');\n\ntopLine.addEventListener('click', function (_ref) {\n  var target = _ref.target;\n\n  //console.log(target);\n  if (target.matches('.status__button')) {\n    console.log('status');\n  } else if (target.matches('.online__button')) {\n    console.log('online');\n    (0, _online.showOnlineUsers)();\n  } else {\n    return;\n  }\n});\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi90b3AtbGluZS90b3AtbGluZS5qcy5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9zcmMvanMvdG9wLWxpbmUvdG9wLWxpbmUuanM/ZjI1ZiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBzaG93T25saW5lVXNlcnMgfSBmcm9tICcuL29ubGluZS5qcyc7XG5cbmNvbnN0IHRvcExpbmUgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndG9wLWxpbmUnKTtcblxudG9wTGluZS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsICh7dGFyZ2V0fSkgPT4ge1xuICAvL2NvbnNvbGUubG9nKHRhcmdldCk7XG4gIGlmICh0YXJnZXQubWF0Y2hlcygnLnN0YXR1c19fYnV0dG9uJykpIHtcbiAgICBjb25zb2xlLmxvZygnc3RhdHVzJyk7XG4gIH0gZWxzZSBpZiAodGFyZ2V0Lm1hdGNoZXMoJy5vbmxpbmVfX2J1dHRvbicpKSB7XG4gICAgY29uc29sZS5sb2coJ29ubGluZScpO1xuICAgIHNob3dPbmxpbmVVc2VycygpO1xuXG4gIH0gZWxzZSB7XG4gICAgcmV0dXJuO1xuICB9XG5cbn0pO1xuIl0sIm1hcHBpbmdzIjoiOztBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFBQTtBQUNBO0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBRUEiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./top-line/top-line.js\n");
 
 /***/ })
 

@@ -1,0 +1,28 @@
+<div class="status" id="status">
+
+  <input type="radio" name="status" class="visually-hidden status__online" id="status__online">
+  <label class="status__label status__label--online" for="status__online">
+    <span class="status__text">
+      Online
+    </span>
+  </label>
+
+  <input type="radio" name="status" class="visually-hidden status__dont-disturb" id="status__dont-disturb">
+  <label class="status__label status__label--disturb" for="status__dont-disturb">
+    <span class="status__text">
+      Don't disturb
+    </span>
+  </label>
+
+  <input type="radio" name="status" class="visually-hidden status__invisible" id="status__invisible">
+  <label for="status__invisible" class="status__label status__label--invisible">
+    <span class="status__text ">
+      Invisible
+    </span>
+  </label>
+
+  <button class="status__button button" id="status-button">
+    {{mixins.icon('arrow_down')}}
+  </button>
+
+</div>

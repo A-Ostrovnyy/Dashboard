@@ -1,3 +1,2 @@
-import sayHello from './lib/sayHello.js';
 
-sayHello();
+import './top-line/top-line.js';
