@@ -1,0 +1,66 @@
+.status
+	margin-left: auto
+	display: flex
+	flex-direction: column
+	text-align: right
+
+.status__button
+	margin-bottom: 10px
+	margin-left: auto
+	background-color: $green
+	font-size: 20px
+	fill: $white
+	padding-top: 8px
+	text-align: center
+	order: -1
+	border: 1px solid transparent
+
+.status__button .icon-arrow_down
+	fill: $white
+
+.status__button:hover
+	box-shadow: 0 0 5px 5px $grey-transparent
+	transition: box-shadow .2s ease-in
+
+.status__label
+	display: block
+	padding: 5px 19px 5px 5px
+	cursor: pointer
+	border-radius: 13px
+
+.status__label:hover
+	background-color: rgba($grey, .2)
+
+.status__label::after
+	content: ""
+	position: relative
+	top: 3px
+	width: 20px
+	height: 20px
+	display: inline-block
+	border-radius: 50%
+	border: 1px solid transparent
+
+.status__label--online::after
+	background-color: $green
+
+.status__label--disturb::after
+	background-color: $accent
+
+.status__label--invisible::after
+	background-color: transparent
+	border-color: $grey
+
+.status__text
+	word-wrap: normal
+
+//Changing button color according to status
+.status__online:checked ~ .status__button
+	background-color: $green
+
+.status__dont-disturb:checked ~ .status__button
+	background-color: $accent
+
+.status__invisible:checked ~ .status__button
+	background-color: transparent
+	border-color: $grey

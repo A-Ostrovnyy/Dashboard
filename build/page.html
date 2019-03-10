@@ -75,6 +75,79 @@
             </li>
           </ul>
         </nav>
+        <div class="dashboard">
+          <div class="dashboard__top" id="top-line">
+            <div class="refresh button">
+              <button class="refresh__button" id="refresh_button">
+                <svg class="icon icon-refresh">
+                  <use xlink:href="img/sprite.svg#icon-refresh"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="beadcrumbs__item">
+                  <a href="#" class="breadcrumbs__link">Dashboard</a>
+                </li>
+              </ul>
+            </div>
+            <div class="status" id="status">
+              <input type="radio" name="status" class="visually-hidden status__online" id="status__online">
+              <label class="status__label status__label--online" for="status__online">
+                <span class="status__text"> Online </span>
+              </label>
+              <input type="radio" name="status" class="visually-hidden status__dont-disturb" id="status__dont-disturb">
+              <label class="status__label status__label--disturb" for="status__dont-disturb">
+                <span class="status__text"> Don't disturb </span>
+              </label>
+              <input type="radio" name="status" class="visually-hidden status__invisible" id="status__invisible">
+              <label for="status__invisible" class="status__label status__label--invisible">
+                <span class="status__text "> Invisible </span>
+              </label>
+              <button class="status__button button" id="status-button">
+                <svg class="icon icon-arrow_down">
+                  <use xlink:href="img/sprite.svg#icon-arrow_down"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="online">
+              <button class="online__button" id="online-button">
+                <svg class="icon icon-chat">
+                  <use xlink:href="img/sprite.svg#icon-chat"></use>
+                </svg>
+                <span id="users-online">5</span> users online <svg class="icon icon-arrow_down">
+                  <use xlink:href="img/sprite.svg#icon-arrow_down"></use>
+                </svg>
+              </button>
+              <ul class="online__list" id="online-list">
+                <li class="online__item">User1</li>
+                <li class="online__item">User2</li>
+                <li class="online__item">User3</li>
+                <li class="online__item">User4</li>
+                <li class="online__item">User5</li>
+              </ul>
+            </div>
+          </div>
+          <div class="activities">
+            <dl class="activities__list">
+              <dl class="activities__item">
+                <div class="user">
+                  <div class="user__avatar">
+                    <img src="" alt="user image" class="user__img">
+                  </div>
+                  <div class="user__activities">
+                    <span class="user__name"> Mark P. </span>
+                    <span class="user__message"> add an Image into Worlda </span>
+                    <time datetime="2018-07-07A20:00:00" class="user__action">
+                      <span class="user__time">today</span>
+                      <span class="user__data">10:30 PM</span>
+                    </time>
+                  </div>
+                </div>
+              </dl>
+            </dl>
+          </div>
+        </div>
       </div>
     </div>
     <!-- END content -->
