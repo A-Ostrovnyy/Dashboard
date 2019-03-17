@@ -1,0 +1,38 @@
+.activities
+	max-width: 405px
+	flex-shrink: 0
+	height: 100%
+	box-shadow: -3px 5px 7px 0 $black
+	background-color: $white
+	border-radius: 5px
+	border: 1px solid $grey-transparent
+
+.activities__list
+	display: block
+	position: relative
+	height: 100%
+	width: 100%
+	margin: 0
+	overflow-x: hidden
+	overflow-y: scroll
+
+.activities__item
+	border-bottom: 1px solid $activity-border
+	padding: 25px
+
+.activities__archive
+	position: sticky
+	bottom: 0
+	width: 100%
+	font-size: 18px
+	padding: 20px 30px
+	color: $grey-breadcrumbs
+	text-align-last: left
+	border-top: 1px solid $activity-border
+
+.activities__archive .icon
+	position: relative
+	transform: rotate(-90deg)
+	top: 3px
+
+@import user

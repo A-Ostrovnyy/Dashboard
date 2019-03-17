@@ -128,24 +128,230 @@
               </ul>
             </div>
           </div>
-          <div class="activities">
-            <dl class="activities__list">
-              <dl class="activities__item">
-                <div class="user">
-                  <div class="user__avatar">
-                    <img src="" alt="user image" class="user__img">
+          <div class="tabs">
+            <div class="tabs__top">
+              <button class="tabs__button tabs__button--projects tabs__button--active" id="active-projects">
+                <svg class="icon icon-clock">
+                  <use xlink:href="img/sprite.svg#icon-clock"></use>
+                </svg> Active Projects <span class="tabs__counter" id="tabs-counter-project">9</span>
+              </button>
+              <button class="tabs__button tabs__button--messasge" id="messenger">
+                <svg class="icon icon-plain">
+                  <use xlink:href="img/sprite.svg#icon-plain"></use>
+                </svg> Messenger <span class="tabs__counter" id="tabs-counter-message">2</span>
+              </button>
+              <input type="text" id="search-project" class="tabs__search" placeholder="Search Project, User, Task, etc...">
+            </div>
+            <div class="tabs__content">
+              <div class="project">
+                <div class="project__top">
+                  <input type="text" name="project-search" id="project-search" class="project__search" placeholder="Search a Project with Name, Task, User...">
+                  <div class="project__new">
+                    <div class="new">
+                      <button class="new__button" id="new-button">
+                        <span class="new__accent" id="users-online"> New Projects </span> (descending) <svg class="icon icon-arrow_down">
+                          <use xlink:href="img/sprite.svg#icon-arrow_down"></use>
+                        </svg>
+                      </button>
+                      <ul class="new__list new__list" id="new-list">
+                        <li class="new__item">New-1</li>
+                        <li class="new__item">New-2</li>
+                        <li class="new__item">New-3</li>
+                        <li class="new__item">New-4</li>
+                        <li class="new__item">New-5</li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="user__activities">
-                    <span class="user__name"> Mark P. </span>
-                    <span class="user__message"> add an Image into Worlda </span>
-                    <time datetime="2018-07-07A20:00:00" class="user__action">
-                      <span class="user__time">today</span>
-                      <span class="user__data">10:30 PM</span>
-                    </time>
-                  </div>
+                  <button class="project__add">
+                    <span class="project__add-inner">+</span>
+                  </button>
                 </div>
-              </dl>
-            </dl>
+                <dl class="project__list">
+                  <dd class="project__accordion">
+                    <div class="project__button">
+                      <span class="project__progress">23%</span>
+                      <span class="project__task">Create Contact Formular</span>
+                      <a href="#" class="project__name">Worlda</a>
+                      <button class="project__look">
+                        <svg class="icon icon-search">
+                          <use xlink:href="img/sprite.svg#icon-search"></use>
+                        </svg>
+                      </button>
+                      <button class="project__more">
+                        <svg class="icon icon-arrow_down">
+                          <use xlink:href="img/sprite.svg#icon-arrow_down"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="panel">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                  </dd>
+                </dl>
+                <button class="project__archive"> Project Archiv <svg class="icon icon-arrow_down">
+                    <use xlink:href="img/sprite.svg#icon-arrow_down"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="activities">
+                <dl class="activities__list">
+                  <dl class="activities__item">
+                    <div class="user">
+                      <div class="user__avatar">
+                        <img src="/img/mark.png" alt="user image" class="user__img">
+                      </div>
+                      <div class="user__activities">
+                        <span class="user__name"> Mark P. </span>
+                        <span class="user__message"> add an Image into Worlda </span>
+                        <time datetime="2018-07-07A20:00:00" class="user__action">
+                          <span class="user__time">today, </span>
+                          <span class="user__data">10:30 PM</span>
+                        </time>
+                      </div>
+                    </div>
+                  </dl>
+                  <dl class="activities__item">
+                    <div class="user">
+                      <div class="user__avatar">
+                        <img src="/img/marvin.png" alt="user image" class="user__img">
+                      </div>
+                      <div class="user__activities">
+                        <span class="user__name"> Marvin S </span>
+                        <span class="user__message"> add an Image into Worlda </span>
+                        <time datetime="2018-07-07A20:00:00" class="user__action">
+                          <span class="user__time">today, </span>
+                          <span class="user__data">10:30 PM</span>
+                        </time>
+                      </div>
+                    </div>
+                  </dl>
+                  <dl class="activities__item">
+                    <div class="user">
+                      <div class="user__avatar">
+                        <img src="/img/sebastian.png" alt="user image" class="user__img">
+                      </div>
+                      <div class="user__activities">
+                        <span class="user__name"> Sebastian K. </span>
+                        <span class="user__message"> add an Image into Worlda </span>
+                        <time datetime="2018-07-07A20:00:00" class="user__action">
+                          <span class="user__time">today, </span>
+                          <span class="user__data">10:30 PM</span>
+                        </time>
+                      </div>
+                    </div>
+                  </dl>
+                  <dl class="activities__item">
+                    <div class="user">
+                      <div class="user__avatar">
+                        <img src="/img/mark.png" alt="user image" class="user__img">
+                      </div>
+                      <div class="user__activities">
+                        <span class="user__name"> Mark P. </span>
+                        <span class="user__message"> add an Image into Worlda </span>
+                        <time datetime="2018-07-07A20:00:00" class="user__action">
+                          <span class="user__time">today, </span>
+                          <span class="user__data">10:30 PM</span>
+                        </time>
+                      </div>
+                    </div>
+                  </dl>
+                  <dl class="activities__item">
+                    <div class="user">
+                      <div class="user__avatar">
+                        <img src="/img/philip.png" alt="user image" class="user__img">
+                      </div>
+                      <div class="user__activities">
+                        <span class="user__name"> Philip O. </span>
+                        <span class="user__message"> add an Image into Worlda </span>
+                        <time datetime="2018-07-07A20:00:00" class="user__action">
+                          <span class="user__time">today, </span>
+                          <span class="user__data">10:30 PM</span>
+                        </time>
+                      </div>
+                    </div>
+                  </dl>
+                  <dl class="activities__item">
+                    <div class="user">
+                      <div class="user__avatar">
+                        <img src="/img/mark.png" alt="user image" class="user__img">
+                      </div>
+                      <div class="user__activities">
+                        <span class="user__name"> Mark P. </span>
+                        <span class="user__message"> add an Image into Worlda </span>
+                        <time datetime="2018-07-07A20:00:00" class="user__action">
+                          <span class="user__time">today, </span>
+                          <span class="user__data">10:30 PM</span>
+                        </time>
+                      </div>
+                    </div>
+                  </dl>
+                  <dl class="activities__item">
+                    <div class="user">
+                      <div class="user__avatar">
+                        <img src="/img/benni.png" alt="user image" class="user__img">
+                      </div>
+                      <div class="user__activities">
+                        <span class="user__name"> Benni I. </span>
+                        <span class="user__message"> add an Image into Worlda </span>
+                        <time datetime="2018-07-07A20:00:00" class="user__action">
+                          <span class="user__time">today, </span>
+                          <span class="user__data">10:30 PM</span>
+                        </time>
+                      </div>
+                    </div>
+                  </dl>
+                  <dl class="activities__item">
+                    <div class="user">
+                      <div class="user__avatar">
+                        <img src="/img/benni.png" alt="user image" class="user__img">
+                      </div>
+                      <div class="user__activities">
+                        <span class="user__name"> Benni I. </span>
+                        <span class="user__message"> add an Image into Worlda </span>
+                        <time datetime="2018-07-07A20:00:00" class="user__action">
+                          <span class="user__time">today, </span>
+                          <span class="user__data">10:30 PM</span>
+                        </time>
+                      </div>
+                    </div>
+                  </dl>
+                  <dl class="activities__item">
+                    <div class="user">
+                      <div class="user__avatar">
+                        <img src="/img/benni.png" alt="user image" class="user__img">
+                      </div>
+                      <div class="user__activities">
+                        <span class="user__name"> Benni I. </span>
+                        <span class="user__message"> add an Image into Worlda </span>
+                        <time datetime="2018-07-07A20:00:00" class="user__action">
+                          <span class="user__time">today, </span>
+                          <span class="user__data">10:30 PM</span>
+                        </time>
+                      </div>
+                    </div>
+                  </dl>
+                  <dl class="activities__item">
+                    <div class="user">
+                      <div class="user__avatar">
+                        <img src="/img/benni.png" alt="user image" class="user__img">
+                      </div>
+                      <div class="user__activities">
+                        <span class="user__name"> Benni I. </span>
+                        <span class="user__message"> add an Image into Worlda </span>
+                        <time datetime="2018-07-07A20:00:00" class="user__action">
+                          <span class="user__time">today, </span>
+                          <span class="user__data">10:30 PM</span>
+                        </time>
+                      </div>
+                    </div>
+                  </dl>
+                  <button class="activities__archive"> Activities Archive <svg class="icon icon-arrow_down">
+                      <use xlink:href="img/sprite.svg#icon-arrow_down"></use>
+                    </svg>
+                  </button>
+                </dl>
+              </div>
+            </div>
           </div>
         </div>
       </div>
