@@ -1,4 +1,19 @@
-
-
-{% include "partials/dashboard/tabs/_activities.html" %}
-{% include "partials/dashboard/tabs/_projects.html" %}
+<div class="tabs">
+  <div class="tabs__top">
+    <button class="tabs__button tabs__button--projects tabs__button--active" id="active-projects">
+      {{mixins.icon('clock')}}
+      Active Projects
+      <span class="tabs__counter" id="tabs-counter-project">9</span>
+    </button>
+    <button class="tabs__button tabs__button--messasge" id="messenger">
+      {{mixins.icon('plain')}}
+      Messenger
+      <span class="tabs__counter" id="tabs-counter-message">2</span>
+    </button>
+    <input type="text" id="search-project" class="tabs__search" placeholder="Search Project, User, Task, etc...">
+  </div>
+  <div class="tabs__content">
+    {% include "partials/dashboard/tabs/_projects.html" %}
+    {% include "partials/dashboard/tabs/_activities.html" %}
+  </div>
+</div>

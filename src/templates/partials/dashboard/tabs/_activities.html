@@ -1,0 +1,33 @@
+<div class="activities">
+  <dl class="activities__list">
+    {% import "data/_activities.html" as action %}
+
+    {% for action in action.list %}
+      <dl class="activities__item">
+        <div class="user">
+          <div class="user__avatar">
+            <img src="{{action.img}}" alt="user image" class="user__img">
+          </div>
+          <div class="user__activities">
+            <span class="user__name">
+              {{action.name}}
+            </span>
+            <span class="user__message">
+              {{action.message}}
+            </span>
+            <time datetime="2018-07-07A20:00:00" class="user__action">
+              <span class="user__time">{{action.when}}, </span>
+              <span class="user__data">{{action.time}}</span>
+            </time>
+          </div>
+        </div>
+      </dl>
+    {% endfor %}
+    <button class="activities__archive">
+      Activities Archive
+      {{mixins.icon('arrow_down')}}
+    </button>
+  </dl>
+</div>
+
+

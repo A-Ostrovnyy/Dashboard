@@ -1,0 +1,46 @@
+.user
+	color: $light-grey
+	font-size: 18px
+
+.user__avatar
+	display: inline-block
+	position: relative
+
+.user__activities
+	display: inline-block
+
+.user__img
+	width: 100%
+	height: auto
+	border-radius: 50%
+	object-fit: cover
+
+.user__avatar::after
+	content: ''
+	position: absolute
+	top: 0
+	left: -2px
+	width: 12px
+	height: 12px
+	display: block
+	border: 2px solid $white
+	background-color: $green
+	border-radius: 50%
+
+.user__name
+	color: $grey-breadcrumbs
+
+.user__action
+	display: block
+
+.user__time
+	text-transform: uppercase
+	font-family: overpass-semibold, sans-serif
+	font-size: 14px
+
+.user__data
+	color: $time
+	font-size: 13px
+
+
+
